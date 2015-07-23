@@ -7,4 +7,7 @@ router.get('/', function(req, res, next) {
 });
 router.get('/quizes/question', quizController.question);
 router.get('/quizes/answer', quizController.answer);
+router.get('/authors', function(req, res) {
+	res.render('authors', {autor: 'Autor : Ramón Rueda'});
+});
 module.exports = router;
